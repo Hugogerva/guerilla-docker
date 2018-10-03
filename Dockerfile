@@ -4,7 +4,7 @@ RUN apt-get update &&  \
     apt-get install -y \ 
  			libglu1 \
  			libgtk2.0-0 \ 
-			curl \
+			wget \
       			xvfb \
 			xterm \ 
  && apt-get autoremove -y 
