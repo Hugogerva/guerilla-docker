@@ -1,6 +1,6 @@
 #!/bin/sh
 
-GPROJECT="/host/$1"
+GPROJECT="/iexec/$1"
 GPROJECTPATH=$(dirname $GPROJECT)
 
 Xvfb :0 -screen 0 1024x768x24 & guerilla --nogui $GPROJECT --cmd "render('batch')" \
