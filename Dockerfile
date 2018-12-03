@@ -11,9 +11,7 @@ RUN apt-get update &&  \
 			inotify-tools \
  && apt-get autoremove -y 
 
-ENV DISPLAY :0
-
-# DL entrypoint script
+# DL entrypoint script (change if uploaded to official repo)
 RUN wget https://raw.githubusercontent.com/Hugogerva/guerilla-docker/master/entrypoint.sh
 RUN mv entrypoint.sh /usr/local/bin/ep.sh
 RUN chmod +x /usr/local/bin/ep.sh
