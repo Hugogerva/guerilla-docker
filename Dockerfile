@@ -8,6 +8,7 @@ RUN apt-get update &&  \
 			wget \	
       			xvfb \	
 			xterm \ 
+			inotify-tools \
  && apt-get autoremove -y 
 
 ENV DISPLAY :0
@@ -18,4 +19,3 @@ RUN mv entrypoint.sh /usr/local/bin/ep.sh
 RUN chmod +x /usr/local/bin/ep.sh
 
 ENTRYPOINT ["/usr/local/bin/ep.sh"]
- 
